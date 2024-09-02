@@ -1,0 +1,38 @@
+
+/*-------------------------------------------
+	Layouts
+-------------------------------------------*/
+
+
+html {}
+
+body {
+
+	overflow-x: hidden;
+
+}
+
+	#page {
+
+		.wrap {
+
+			background: rgb(251, 244, 242);
+			border-bottom: 10px solid $salmon;
+
+			@media screen and (min-width: 1230px) {
+
+				@include box-shadow(0 0 15px rgba($black, 0.10));
+
+			}
+
+		}
+
+	}
+
+		#header {}
+
+		#content {}
+
+			#main {}
+
+	#footer {}

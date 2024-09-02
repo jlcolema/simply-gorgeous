@@ -1,0 +1,136 @@
+
+/*-------------------------------------------
+	Pre-Header
+-------------------------------------------*/
+
+
+#pre-header {
+
+	position: relative;
+	padding: 5px 0 1px 0;
+	border-top: 7px solid $salmon;
+	background: rgb(239, 99, 101);
+
+	&:after {
+
+		position: absolute;
+		left: 0;
+		bottom: -12px;
+		content: "";
+		width: 100%;
+		height: 12px;
+		background: url(../img/drapery.png) center bottom repeat-x;
+		z-index: 5;
+
+		@include retina {
+
+			background: url(../img/drapery_2x.png);
+			background-size: 20px 12px;
+
+		}
+
+	}
+
+	.wrap {
+
+		@include group;
+
+	}
+
+		.call {
+
+			float: left;
+			height: 24px;
+			padding: 2px 0 0 0;
+			color: rgb(247, 211, 198);
+
+			a {
+
+				color: rgb(247, 211, 198);
+
+				&:hover {}
+
+			}
+
+		}
+
+		.connect {
+
+			float: right;
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				@include group;
+
+			}
+
+				li {
+
+					float: left;
+					margin: 0 6px 0 0;
+					@include hide-text;
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						width: 24px;
+						height: 24px;
+						background: url(../img/connect.svg);
+						@include border-radius(50%);
+
+						&:hover {}
+
+					}
+
+				.facebook {
+
+					a {
+
+						background-color: $facebook;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.linkedin {
+
+					a {
+
+						background-position: -24px 0;
+						background-color: $linkedin;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.yelp {
+
+					a {
+
+						background-position: -48px 0;
+						background-color: $yelp;
+
+						&:hover {}
+
+					}
+
+				}
+
+		}
+
+}

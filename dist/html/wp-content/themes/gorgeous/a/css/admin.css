@@ -1,0 +1,39 @@
+/*-------------------------------------------
+	Admin
+-------------------------------------------*/
+body.login {
+  background: #fff0ea url(../img/background.png); }
+  body.login h1 a {
+    display: block;
+    width: 290px;
+    height: 80px;
+    background: url(../img/logo.png); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      body.login h1 a {
+        background: url(../img/logo_2x.png);
+        background-size: 290px 80px; } }
+  body.login #loginform {
+    background: #fbf4f2; }
+    body.login #loginform label {
+      color: #666666; }
+    body.login #loginform input {
+      border: 1px solid #dfdfdf; }
+    body.login #loginform .forgetmenot input {
+      border-color: #c8c8c8; }
+    body.login #loginform .submit {
+      border: none !important; }
+    body.login #loginform #wp-submit {
+      color: white;
+      background: #de4b4b;
+      border: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+  body.login #nav a {
+    color: #666666; }
+    body.login #nav a:hover {
+      color: #de4b4b; }
+  body.login #backtoblog a {
+    color: #666666; }
+    body.login #backtoblog a:hover {
+      color: #de4b4b; }

@@ -1,0 +1,60 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	padding: 30px 0;
+
+	@media screen and (min-width: 800px) {
+
+		padding: 10px 0;
+
+	}
+
+	.wrap {
+
+		@media screen and (min-width: 800px) {
+
+			@include group;
+
+		}
+
+	}
+
+}
+
+		#copyright {
+
+			@media screen and (min-width: 800px) {
+
+				float: left;
+				margin: 0;
+
+			}
+
+			a {
+
+				&:hover {}
+
+			}
+
+		}
+
+		#created-by {
+
+			@media screen and (min-width: 800px) {
+
+				float: right;
+
+			}
+
+			a {
+
+				&:hover {}
+
+			}
+
+		}

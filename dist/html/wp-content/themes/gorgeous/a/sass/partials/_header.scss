@@ -1,0 +1,204 @@
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+
+	position: relative;
+	padding: 32px 0 20px 0;
+
+}
+
+		#logo {
+
+			position: relative;
+			left: -12px;
+			width: 200px;
+			@include hide-text;
+
+			@media screen and (min-width: 400px) {
+
+				width: 290px;
+
+			}
+
+			a {
+
+				display: block;
+				height: 55px;
+				background: url(../img/logo-small.png);
+
+				@include retina {
+
+					background: url(../img/logo-small_2x.png);
+					background-size: 200px 55px;
+
+				}
+
+				@media screen and (min-width: 400px) {
+
+					height: 80px;
+					background: url(../img/logo.png);
+
+					@include retina {
+
+						background: url(../img/logo_2x.png);
+						background-size: 290px 80px;
+
+					}
+
+				}
+
+				&:hover {}
+
+			}
+
+		}
+
+		#nav {
+
+			.toggle {
+
+				position: absolute;
+				top: 41px;
+				right: 0;
+				@include hide-text;
+				border: 1px solid $salmon;
+				@include border-radius(3px);
+				cursor: pointer;
+				z-index: 5;
+
+				@media screen and (min-width: 400px) {
+
+					top: 57px;
+
+				}
+
+				@media screen and (min-width: 980px) {
+
+					display: none;
+
+				}
+
+				span {
+
+					display: block;
+					width: 36px;
+					height: 36px;
+					background: url(../img/nav-toggle.svg) center center;
+
+				}
+
+			}
+
+			ul {
+
+				display: none;
+				margin: 25px 0 10px 0;
+				padding: 0;
+				list-style: none;
+				border-top: 1px solid $salmon;
+				@include group;
+
+				@media screen and (min-width: 980px) {
+
+					position: absolute;
+					right: -15px;
+					top: 57px;
+					display: block;
+					margin: 0;
+					border: none;
+					z-index: 5;
+
+				}
+
+				@media screen and (min-width: 980px) {
+
+					right: -20px;
+
+				}
+
+				&.open {
+
+					display: block;
+
+				}
+
+			}
+
+				li {
+
+					float: left;
+					width: 50%;
+					text-align: center;
+					border-bottom: 1px solid $salmon;
+
+					@media screen and (min-width: 980px) {
+
+						width: auto;
+						border: none;
+
+					}
+
+					&:first-of-type {
+
+						display: none;
+
+						@media screen and (min-width: 980px) {
+
+							display: block;
+
+						}
+
+					}
+
+					&:nth-child(even) {
+
+						border-right: 1px solid $salmon;
+
+						@media screen and (min-width: 980px) {
+
+							border: none;
+
+						}
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						height: 40px;
+						padding: 10px 10px 0 10px;
+
+						@media screen and (min-width: 980px) {
+
+							padding: 10px 15px 0 15px;
+
+						}
+
+						@media screen and (min-width: 1060px) {
+
+							padding: 10px 20px 0 20px;
+
+						}
+
+						&:hover {}
+
+					}
+
+				.current-menu-item,
+				.single-service & #menu-item-68 {
+
+					a {
+
+						text-decoration: underline;
+
+					}
+
+				}
+
+		}
